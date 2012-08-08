@@ -1,0 +1,127 @@
+/**
+ * @category    Interface
+ * @package     psdup
+ * @author	    Bilal Cinarli
+ * @copyright	2011 Bilal Cinarli
+ * @license     default
+ * @version
+ * @filesource
+ * @link        http://bcinarli.com
+ * @see
+ * @since
+ **/
+
+/*  ------------------- Layout  ------------------- */
+    body { background: #f2f2f2; color: #3e3e3e; font: 10px/1.2 sans-serif; }
+
+    #wrapper { width: 930px; min-height: 100%; margin: 0 auto -88px; background: url(../images/wrapper.png) center repeat-y; }
+        #masthead { width: 901px; height: 136px; margin: 0 auto; background: #f2f2f2 url(../images/header.png) bottom center no-repeat; }
+        #main-nav { height: 64px; margin-bottom: 10px; background: #9dbf28 url(../images/nav.png) top center no-repeat; }
+        #content { float: right; width: 700px; }
+            #products { float: left; width: 470px; }
+			#categories { float: left; width: 470px; }
+			#posts { float: left; width: 470px; }
+			#page { float: left; width: 470px; }
+            #product-sidebar { float: right; width: 210px; }
+        #sidebar { float: left; width: 210px; }
+        #push { clear: both; height: 88px; }
+    #mastfoot { width: 901px; height: 58px; margin: 0 auto; padding-top: 30px; background: #f2f2f2 url(../images/footer.png) top center no-repeat; color: #666; }
+
+    #wrapper, #masthead, #main-nav, #content, #mastfoot { position: relative; }
+    #wrapper, #mastfoot { margin-right: auto; margin-left: auto; }
+/*  ------------------- Layout  ------------------- */
+/*  ------------------- Masthead  ------------------- */
+    #logo { position: absolute; bottom: 19px; left: 0; }
+
+    #user-info { position: absolute; right: 0; bottom: 10px; width: 150px; padding: 0 10px 10px 40px; background: url(../images/sepet.png) top left no-repeat; text-align: right; }
+        #user-info .red { color: #e7353e; }
+        #user-info a { color: #3e3e3e; }
+
+    #search { position: absolute; overflow: hidden; top: 18px; right: 15px; height: 28px; padding: 1px; background: #fff; -moz-border-radius: 10px; -o-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+        #search label { position: absolute; top: 7px; left: 13px; }
+        #q { width: 190px; margin-left: 10px; padding: 4px 4px 4px 0; border: none; background: none; font-size: 10px; }
+        #search button { height: 28px; padding: 6px 10px 7px; border: none; background: #9dbf27; color: #fff; font-size: 10px; -moz-border-radius: 0 10px 10px 0; -o-border-radius: 0 10px 10px 0; -webkit-border-radius: 0 10px 10px 0; border-radius: 0 10px 10px 0; }
+/*  ------------------- Masthead  ------------------- */
+/*  ------------------- Navigation  ------------------- */
+    #main-nav ul { position: absolute; top: 30px; left: 25px; }
+        #main-nav li { float: left; margin-right: 15px; }
+        #main-nav a { position: relative; display: inline-block; color: #fff; font-size: 12px; line-height: 1; }
+        #main-nav a:hover, #main-nav .current a { border-bottom: 1px solid #fff; }
+        #main-nav .current a:before { content: ' '; position: absolute; bottom: -5px; left: 50%; width: 8px; height: 4px; margin-left: -4px; background: url(../images/current-nav.png); }
+/*  ------------------- Navigation  ------------------- */
+/*  ------------------- Content  ------------------- */
+    #tagline { position: relative; width: 680px; height: 180px; margin-bottom: 40px; }
+        #tagline .nivo-controlNav { position: absolute; top: 180px; left: 50%; width: 64px; height: 18px; margin-left: -32px; background: url(../images/slider-nav.png); }
+            #tagline .nivo-control { display: block; float: left; width: 12px; height: 12px; margin: 3px 3px 0 0; background: url(../images/slider-bullet.png) top right no-repeat; text-indent: -9999px; }
+            #tagline .nivo-control:first-child { margin-left: 3px; }
+            #tagline .nivo-control.active { background-position: top left; }
+
+    #products h3 { width: 470px; height: 31px; margin: 0 0 10px 7px; background: url(../images/product-box-title.png); color: #fff; font-size: 14px; line-height: 26px; text-indent: 40px; }
+    #products article { margin: 0 0 20px -7px; }
+	#products ul { list-style:inside; margin-left: 18px; }
+	#products li { float:left; margin-right:0; padding:5px; width:215px; }
+	#products img { float: none; }
+    .product { position: relative; float: left; width: 146px; margin: 0 0 7px 7px; padding: 2px 2px 30px; border: 1px solid #cdcdcd; font-size: 12px; text-align: center; }
+    .product img { display: block; margin: 5px auto; }
+	.product a { margin-bottom: 5px;}
+    .product .price { position: absolute; bottom: 4px; left: -1px; display: block; width: 50px; height: 30px; background-color: #9dbf27; color: #fff; line-height: 30px; -moz-border-radius: 0 10px 10px 0; -o-border-radius: 0 10px 10px 0; -webkit-border-radius: 0 10px 10px 0; border-radius: 0 10px 10px 0; }
+    .product .corner { position: absolute; bottom: 4px; right: -1px; display: block; width: 10px; height: 30px; background-color: #9dbf27; -moz-border-radius: 10px 0 0 10px; -o-border-radius: 10px 0 0 10px; -webkit-border-radius: 10px 0 0 10px; border-radius: 10px 0 0 10px; }
+
+    #product-sidebar .product { float: none; margin-left: 22px; }
+    .red .product .price, .red .product .corner { background-color: #e7353e; }
+    .red .product a.incele { color: #e7353e; }
+    #product-sidebar .arrows { display: block; margin-left: 70px; margin-bottom: 7px; }
+
+    .category { position: relative; height:115px; float: left; width: 146px; margin: 0 0 7px 7px; padding: 2px 2px 30px; border: 1px solid #cdcdcd; font-size: 12px; text-align: center; }
+    .category img { display: block; margin: 5px auto; float:none !important; }
+	
+    #posts h3 { width: 470px; height: 31px; margin: 0 0 10px 7px; background: url(../images/product-box-title.png); color: #fff; font-size: 14px; line-height: 26px; text-indent: 40px; }
+    #posts article { margin: 0 0 20px -7px; }
+	#posts ul { list-style:inside; margin-left: 18px; }
+	#posts li { float:left; margin-right:0; padding:5px; width:215px; }
+	#posts img { float: left; margin-right:5px; }
+	#posts h2 { font-size:14px; margin-bottom:5px; padding:5px; }
+    .post { position: relative; float: left; height:110px; width: 464px; margin: 0 0 7px 7px; padding: 2px 2px 10px; border: 1px solid #cdcdcd; font-size: 12px; text-align: left; }
+	.post a { text-decoration: none; color: #3E3E3E; }
+	.post a:hover { text-decoration: underline;}
+    .post img { display: block; margin: 5px auto; }
+    .post .price { position: absolute; bottom: 4px; left: -1px; display: block; width: 50px; height: 30px; background-color: #9dbf27; color: #fff; line-height: 30px; -moz-border-radius: 0 10px 10px 0; -o-border-radius: 0 10px 10px 0; -webkit-border-radius: 0 10px 10px 0; border-radius: 0 10px 10px 0; }
+    .post .corner { position: absolute; bottom: 4px; right: -1px; display: block; width: 10px; height: 30px; background-color: #9dbf27; -moz-border-radius: 10px 0 0 10px; -o-border-radius: 10px 0 0 10px; -webkit-border-radius: 10px 0 0 10px; border-radius: 10px 0 0 10px; }
+	.summary { color:#1D4B7E; font-size:11px; font-weight:normal; line-height:22px; padding:0 5px 5px; }
+
+    #page h3 { width: 470px; height: 31px; margin: 0 0 10px 7px; background: url(../images/product-box-title.png); color: #fff; font-size: 14px; line-height: 26px; text-indent: 40px; }
+    #page article { margin: 0 0 20px -7px; }
+	#page ul { list-style:inside; margin-left: 18px; }
+	#page li { margin-right:0; padding:5px; }
+	#page img { float: left; margin:5px 5px 5px auto; max-width: 470px; }
+/*  ------------------- Content  ------------------- */
+/*  ------------------- Sidebar  ------------------- */
+    .box h3 { width: 210px; height: 25px; padding-bottom: 8px; background: url(../images/box-title.png) no-repeat; color: #fff; font-size: 10px; line-height: 25px; text-indent: 10px; }
+        .box h3 { background-color: #9dbf27; font-size: 12px; }
+        .box h3.left { background-position: 0 25px; text-indent: 25px; }
+        .box h3.right { background-position: -210px 25px; }
+        .box.red h3 { background-color: #e7353e; background-position: -420px 25px; }
+
+    #sidebar .box { width: 195px; margin-left: 15px; color: #000; }
+        #sidebar .box h3 { margin-left: -15px; }
+		#sidebar .box  p { background-color:#F2F2F2; font-size:11px; line-height:18px; margin-left:10px; padding:5px; width:175px; } 
+		
+    .box .nav li { margin: 0 0 2px 10px; padding-left: 20px; background: #f2f2f2 url(../images/bullet.png) center left no-repeat; line-height: 26px; }
+    .box .nav a { color: #000; }
+
+    #login { margin-left: 15px; }
+        #login li { margin-bottom: 5px; }
+            #login label { display: block; float: left; width: 60px; line-height: 16px; }
+            #login input { width: 111px; padding: 2px; font-size: 10px; }
+            #login button { float: right; padding: 3px 6px; border: none; background: #9dbf27; color: #fff; font-size: 10px; }
+    #register { display: block; margin-top: 5px; padding-left: 15px; background: url(../images/link-drop.png) left top no-repeat; color: #9dbf27; font-size: 12px; line-height: 16px; }
+/*  ------------------- Sidebar  ------------------- */
+/*  ------------------- Footer  ------------------- */
+    #disclaimer { float: left; }
+    #copyright { float: right; }
+    span.author { color: #9dbf27; }
+/*  ------------------- Footer  ------------------- */
+
+/*  ------------------- Google Map ---------------- */
+	#ctrl {width:500px;margin:0 auto}
+	.gmap3{margin:20px auto;border:1px dashed silver;width:500px;height:250px}

@@ -1,0 +1,2 @@
+# dosya yükleme boyutunu 10mb ile sýnýrlandýr
+LimitRequestBody 10240000
